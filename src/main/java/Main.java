@@ -57,7 +57,7 @@ public class Main {
                 (input.stream()
                         .filter((input2) -> Character.isUpperCase(input2.charAt(indexFirstSymbol)))
                         .count() > minCount);
-        long count = inputWords.stream().map(s -> inputWords).filter(moreTwoUpperCase).count();
+        long count = inputWords.stream().map(input -> inputWords).filter(moreTwoUpperCase).count();
         return count > minCount;
     }
 
